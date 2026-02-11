@@ -16,6 +16,7 @@ describe("mylib-kirjaston testit", () => {
   it("Pitäisi laskea yhteen oikein", () => {
     expect(mylib.add(2, 3)).to.equal(5);
     expect(mylib.add(-1, 1)).to.equal(0);
+    expect(mylib.add(-9, 3)).to.equal(-6);
   });
 
   it("Pitäisi laskea vähennys oikein", () => {
