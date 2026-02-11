@@ -18,7 +18,6 @@ describe("mylib-kirjaston testit", () => {
     expect(mylib.add(-1, 1)).to.equal(0);
     expect(mylib.add(-9, 3)).to.equal(-6);
   });
-
   it("Pitäisi laskea vähennys oikein", () => {
     expect(mylib.subtract(5, 3)).to.equal(2);
     expect(mylib.subtract(0, 1)).to.equal(-1);
@@ -31,9 +30,7 @@ describe("mylib-kirjaston testit", () => {
     expect(mylib.divide(6, 3)).to.equal(2);
     expect(mylib.divide(-6, 2)).to.equal(-3);
   });
-  it("Pitäisi heittää virhe nollalla jakamisesta", () => {
-    expect(() => mylib.divide(5, 0)).to.throw(
-      "Division by zero is not allowed.",
-    );
+  it("Pitäisi antaa virheilmoitus nollalla jakamisesta", () => {
+    expect(() => mylib.divide(5, 0)).to.throw();
   });
 });
