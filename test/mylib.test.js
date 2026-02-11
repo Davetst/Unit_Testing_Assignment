@@ -3,12 +3,10 @@ const expect = chai.expect;
 const mylib = require("../mylib");
 
 describe("mylib-kirjaston testit", () => {
-  // Suoritetaan ennen testejä
   before(() => {
     console.log("--- Testaus alkaa ---");
   });
 
-  // Suoritetaan testien jälkeen
   after(() => {
     console.log("--- Kaikki testit suoritettu ---");
   });
